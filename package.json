@@ -1,0 +1,19 @@
+{
+  "name": "test-repo",
+  "version": "1.0.0",
+  "description": "This repository is used for testing purposes. It contains sample files and code to exercise features and demonstrate workflows. Feel free to use or modify it for your own tests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0"
+  }
+}
