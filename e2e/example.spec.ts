@@ -1,15 +1,15 @@
 import { test, expect } from '@playwright/test';
 
 test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+  await page.goto('/');
 
-  await expect(page).toHaveTitle(/Playwright/);
+  await expect(page).toHaveTitle(/Rolnopol/);
 });
 
 test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+  await page.goto('/');
 
-  await page.getByRole('link', { name: 'Get started' }).click();
+  await expect(page).toHaveTitle(/Rolnopol/);
 
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+  await expect(page.locator('body')).toBeVisible();
 });

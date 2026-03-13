@@ -5,10 +5,11 @@ export default defineConfig({
   fullyParallel: true,
 
 
+
   reporter: [['html', { open: 'never' }]],
   use: {
     trace: 'on',
-    baseURL:'localhost:3000'
+    baseURL:'http://localhost:3000'
   },
 
   projects: [
