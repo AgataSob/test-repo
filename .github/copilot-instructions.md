@@ -29,6 +29,10 @@ To keep our git history consistent and easier to understand, follow the **Conven
 - `build`: Changes that affect the build system or external dependencies
 - `chore`: Other changes that don’t modify src or test files (e.g., tooling, config)
 
+## 🧪 Test framework
+- This repo uses **Playwright Test** for end-to-end testing.
+- When adding or updating tests, review `playwright.config.ts` to ensure the configuration (baseURL, projects, reporters, etc.) matches the testing needs.
+
 ## ✍️ Examples
 
 - `feat(ui): add new datepicker component`
